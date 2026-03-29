@@ -324,13 +324,13 @@ export default function App() {
                 <div className="mt-16 pt-10 border-t border-line">
                   <p className="text-[10px] font-bold tracking-[0.2em] text-slate-400 uppercase mb-4">Registration Fees</p>
                   <div className="flex flex-col gap-1 mb-10">
-                    <span className="text-lg text-slate-400 line-through font-light italic">RM {combo.oldPrice}</span>
-                    <span className="text-4xl font-serif font-bold text-red-600">RM {combo.newPrice}</span>
+                    <span className="text-sm sm:text-lg text-slate-400 line-through font-light italic">RM {combo.oldPrice}</span>
+                    <span className="text-2xl sm:text-4xl font-serif font-bold text-red-600">RM {combo.newPrice}</span>
                   </div>
 
                   <button
                     onClick={() => openModal(combo)}
-                    className="w-full bg-red-600 py-6 text-sm font-bold text-white uppercase tracking-widest hover:bg-black transition-all duration-300 shadow-xl shadow-red-600/10"
+                    className="w-full bg-red-600 py-4 sm:py-6 text-xs sm:text-sm font-bold text-white uppercase tracking-widest hover:bg-black transition-all duration-300 shadow-xl shadow-red-600/10"
                   >
                     Daftar Sekarang
                   </button>
