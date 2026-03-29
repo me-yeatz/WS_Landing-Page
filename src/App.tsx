@@ -275,14 +275,16 @@ export default function App() {
                 courses: ["Regulatory Affairs", "Waterless Foundation"],
                 oldPrice: "155.00",
                 newPrice: "120.00",
-                image: "/Combo D.png"
+                image: "/Combo D.png",
+                paymentLink: "https://rzp.io/rzp/TD12jfnc"
               },
               {
                 name: "COMBO E",
                 courses: ["Waterless Foundation", "Lab Bench to Best Seller"],
                 oldPrice: "155.00",
                 newPrice: "120.00",
-                image: "/Combo E.png"
+                image: "/Combo E.png",
+                paymentLink: "https://rzp.io/rzp/HxyU7BJ"
               }
             ].map((combo, idx) => (
               <motion.div
