@@ -145,12 +145,6 @@ export default function App() {
               transition={{ duration: 0.8 }}
               className="max-w-4xl w-full"
             >
-              <div className="mb-10 inline-flex items-center justify-center gap-4 w-full">
-                <div className="h-px w-12 bg-white/30" />
-                <span className="small-caps text-white/50">Pendaftaran Ambilan Terhad</span>
-                <div className="h-px w-12 bg-white/30" />
-              </div>
-
               <h2 className="text-5xl font-serif font-bold tracking-tight text-white sm:text-7xl leading-[1.1] mx-auto">
                 Kuasai <span className="italic text-yellow-400">Realiti Industri</span> Sebenar: <br />
                 <span className="text-2xl sm:text-4xl block mt-6 font-sans font-medium text-slate-200">
