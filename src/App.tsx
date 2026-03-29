@@ -31,7 +31,8 @@ const benefits = [
     image: "/Health Suppliment.png",
     oldPrice: "75.00",
     newPrice: "60.00",
-    highlightPrefix: "text-red-600"
+    highlightPrefix: "text-red-600",
+    paymentLink: "https://rzp.io/rzp/GinAOgyk"
   },
   {
     title: "Global Halal\nCompliance",
@@ -41,7 +42,8 @@ const benefits = [
     image: "/Halal & Haram.png",
     oldPrice: "65.00",
     newPrice: "50.00",
-    highlightPrefix: "text-red-600"
+    highlightPrefix: "text-red-600",
+    paymentLink: "https://rzp.io/rzp/Ph7h1Ju"
   },
   {
     title: "Profitable Product Formulation",
@@ -576,9 +578,6 @@ export default function App() {
                   className="w-80 h-auto object-contain object-left"
                 />
               </div>
-              <p className="text-lg text-slate-400 leading-relaxed font-light max-w-sm">
-                Penyedia latihan profesional terkemuka dalam bidang Regulatory Affairs dan Sains Formulasi. Trusted. Proven. Clarity.
-              </p>
             </div>
 
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 lg:gap-12">
@@ -692,12 +691,15 @@ export default function App() {
                   />
                 </div>
 
-                <button
+                <a
+                  href={selectedCombo?.paymentLink || "#"}
+                  target={selectedCombo?.paymentLink ? "_blank" : "_self"}
+                  rel="noopener noreferrer"
                   className="w-full bg-brand py-6 text-white font-bold rounded-2xl shadow-xl shadow-brand/20 hover:bg-brand-dark transition-all flex items-center justify-center gap-4 text-lg mt-4"
                 >
                   Proceed to Payment
                   <CreditCard className="h-6 w-6" />
-                </button>
+                </a>
               </div>
             </motion.div>
           </div>
