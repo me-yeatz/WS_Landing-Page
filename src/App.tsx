@@ -371,7 +371,7 @@ export default function App() {
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="flex flex-col p-12 border-r border-b border-line hover:bg-paper transition-all group relative overflow-hidden"
               >
-                <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                <div className="absolute top-0 right-0 p-8 text-slate-200 pointer-events-none">
                   <span className="text-6xl font-serif font-bold">0{index + 1}</span>
                 </div>
 
@@ -514,7 +514,7 @@ export default function App() {
                 }
               ].map((step, i) => (
                 <div key={i} className="flex flex-row gap-4 sm:gap-14 items-start group">
-                  <span className="text-5xl sm:text-[8rem] font-serif font-bold text-slate-100/50 leading-none sm:-mt-4 transition-colors duration-500 group-hover:text-brand/10 w-14 sm:w-32 shrink-0">
+                  <span className="text-5xl sm:text-[8rem] font-serif font-bold text-slate-200 leading-none sm:-mt-4 w-14 sm:w-32 shrink-0">
                     {step.num}
                   </span>
                   <div className="flex-1 max-w-lg pt-1 sm:pt-2">
