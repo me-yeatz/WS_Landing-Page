@@ -56,7 +56,7 @@ const benefits = [
     highlightPrefix: "text-red-600"
   },
   {
-    title: "Sustainable\nInnovation",
+    title: "Waterless\nFoundation",
     benefit: "Lead the industry with high-performance waterless products that define the future of beauty.",
     icon: Sparkles,
     color: "bg-sky-50 text-sky-700 border-sky-100",
@@ -76,7 +76,7 @@ const benefits = [
     highlightPrefix: "text-red-600"
   },
   {
-    title: "Halal Certification\nRoadmap",
+    title: "Decoding Halal\nCosmetics",
     benefit: "Navigate the entire Halal certification journey with ease, from initial concept to the retail shelf.",
     icon: GraduationCap,
     color: "bg-blue-50 text-blue-700 border-blue-100",
