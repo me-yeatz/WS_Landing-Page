@@ -259,14 +259,16 @@ export default function App() {
                 courses: ["Regulatory Affairs", "Lab Bench to Best Seller"],
                 oldPrice: "155.00",
                 newPrice: "120.00",
-                image: "/Combo B.png"
+                image: "/Combo B.png",
+                paymentLink: "https://rzp.io/rzp/15igqgV"
               },
               {
                 name: "COMBO C",
                 courses: ["Regulatory Affairs", "Waterless Foundation"],
                 oldPrice: "155.00",
                 newPrice: "120.00",
-                image: "/Combo C.png"
+                image: "/Combo C.png",
+                paymentLink: "https://rzp.io/rzp/6VOkRNo"
               },
               {
                 name: "COMBO D",
