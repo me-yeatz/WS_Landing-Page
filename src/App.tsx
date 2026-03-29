@@ -487,11 +487,6 @@ export default function App() {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-brand/5 -skew-x-12 translate-x-1/2" />
         <div className="mx-auto max-w-5xl relative z-10">
           <div className="text-center">
-            <div className="inline-flex items-center gap-4 mb-12">
-              <div className="h-px w-8 bg-brand" />
-              <span className="small-caps text-brand">Proses Transformasi Kerjaya.</span>
-              <div className="h-px w-8 bg-brand" />
-            </div>
             <h2 className="text-5xl font-serif font-bold tracking-tight text-ink sm:text-8xl mb-12">
               Cara Untuk Mendaftar <span className="italic">Kelas Pilihan Anda:</span>
             </h2>
