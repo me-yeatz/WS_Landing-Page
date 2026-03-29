@@ -130,64 +130,95 @@ export default function App() {
                 <div className="h-px w-12 bg-white/30" />
               </div>
               
-              <h2 className="text-6xl font-serif font-bold tracking-tight text-white sm:text-8xl leading-[0.95] mx-auto">
-                Bina Kerjaya <br />
-                <span className="italic text-yellow-400">Impian</span> Melalui <br />
-                Latihan Industri.
+              <h2 className="text-5xl font-serif font-bold tracking-tight text-white sm:text-7xl leading-[1.1] mx-auto">
+                Kuasai <span className="italic text-yellow-400">Realiti Industri</span> Sebenar: <br />
+                <span className="text-2xl sm:text-4xl block mt-6 font-sans font-medium text-slate-200">
+                  Mantapkan Teori dan Kemahiran Praktikal Anda Untuk Menjadi Rebutan Majikan dan Pelanggan!
+                </span>
               </h2>
               
               <p className="mt-12 text-xl leading-relaxed text-slate-200 font-bold max-w-2xl mx-auto">
-                Kembangkan kepakaran anda bersama kami. Daftar sekarang untuk sesi latihan eksklusif.
+                Jangan risau, kembangkan ilmu dan kemahiran anda bersama kami melalui <span className="text-yellow-400">Kelas Eksklusif</span>. Daftar sekarang! <br className="hidden sm:block" />
+                <span className="inline-block mt-4 px-6 py-2 border border-yellow-400/30 rounded-full text-yellow-400 italic text-sm">
+                  Pendaftaran Dibuka, Slot Terhad.
+                </span>
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Problem Section - Visible Grid Pattern */}
+      {/* Target Audience Section - Refined Grid */}
       <section className="px-6 py-40 bg-paper relative">
-        <div className="mx-auto max-w-4xl flex flex-col items-center text-center">
-          <div className="inline-flex h-20 w-20 items-center justify-center rounded-full bg-white text-amber-500 shadow-xl shadow-amber-500/10 mb-12 border border-amber-100">
-            <AlertCircle className="h-10 w-10" />
+        <div className="mx-auto max-w-7xl flex flex-col items-center">
+          <div className="inline-flex h-20 w-20 items-center justify-center rounded-full bg-white text-brand shadow-xl shadow-brand/10 mb-12 border border-brand/10">
+            <Users className="h-10 w-10" />
           </div>
           
-          <h3 className="text-5xl sm:text-7xl font-serif font-bold text-ink leading-[1.05] tracking-tight mb-20">
-            Sedia Untuk Kerjaya? <br className="hidden sm:block" />
-            <span className="italic text-amber-500">Kuasai Realiti</span> <br className="hidden sm:block" />
-            Industri Hari Ini.
+          <h3 className="text-5xl sm:text-7xl font-serif font-bold text-ink leading-[1.05] tracking-tight mb-24 text-center">
+            Siapa yang <span className="italic text-brand text-6xl sm:text-7xl">Patut Sertai</span> <br className="hidden sm:block" />
+            Kelas Ini?
           </h3>
           
-          <div className="grid gap-8 w-full">
-            <div className="p-10 sm:p-14 bg-white border border-line shadow-sm">
-              <p className="text-2xl sm:text-3xl text-slate-500 leading-relaxed font-light">
-                Kebanyakan graduan mempunyai teori tetapi kekurangan kemahiran praktikal dalam <span className="font-bold text-ink underline decoration-brand/30 underline-offset-8">Regulatory Affairs</span> dan <span className="font-bold text-ink underline decoration-brand/30 underline-offset-8">Formulation</span> yang sangat dicari oleh majikan terkemuka.
-              </p>
-            </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+            {[
+              "Industry Practitioners",
+              "Formulators & R&D teams",
+              "QA/QC & Production teams",
+              "Regulatory & Technical teams",
+              "Brand owners & homegrown brands",
+              "Fresh Graduates & students"
+            ].map((audience, idx) => (
+              <div key={idx} className="group p-8 bg-white border border-line shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="mt-1 h-6 w-6 rounded-full bg-brand/10 flex items-center justify-center shrink-0 group-hover:bg-brand transition-colors">
+                    <CheckCircle2 className="h-4 w-4 text-brand group-hover:text-white" />
+                  </div>
+                  <span className="text-xl sm:text-2xl text-ink font-serif font-bold leading-tight tracking-tight">
+                    {audience}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-20 w-full relative p-10 sm:p-24 bg-[#0A1613] text-center shadow-[0_30px_100px_rgba(0,0,0,0.7)] overflow-hidden border border-[#154634]">
+            {/* Mesh Gradient Glows - Matching Hero */}
+            <div className="absolute top-0 right-0 -mr-[10%] -mt-[10%] w-[300px] h-[300px] rounded-full bg-[#154634] blur-[80px] opacity-60 pointer-events-none" />
+            <div className="absolute bottom-0 left-0 -ml-[10%] -mb-[10%] w-[250px] h-[250px] rounded-full bg-[#0E2E23] blur-[70px] opacity-50 pointer-events-none" />
             
-            <div className="relative p-10 sm:p-24 bg-[#0A1613] text-center shadow-[0_30px_100px_rgba(0,0,0,0.7)] overflow-hidden border border-[#154634]">
-              {/* Mesh Gradient Glows - Matching Hero */}
-              <div className="absolute top-0 right-0 -mr-[10%] -mt-[10%] w-[300px] h-[300px] rounded-full bg-[#154634] blur-[80px] opacity-60 pointer-events-none" />
-              <div className="absolute bottom-0 left-0 -ml-[10%] -mb-[10%] w-[250px] h-[250px] rounded-full bg-[#0E2E23] blur-[70px] opacity-50 pointer-events-none" />
-              
-              {/* Subtle Dot Pattern - Matching Hero */}
-              <div 
-                className="absolute inset-0 z-0 pointer-events-none opacity-[0.05]" 
-                style={{ backgroundImage: 'radial-gradient(#ffffff 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}
-              />
-              
-              <p className="relative z-10 text-2xl sm:text-4xl text-white font-serif tracking-tight leading-snug">
-                Sertai barisan profesional yang <br className="hidden sm:block" /> menguasai industri hari ini.
-              </p>
-              
-              <div className="relative z-10 mt-8 mb-2">
-                <span className="inline-block px-6 py-2 border border-amber-500/30 rounded-full text-amber-400 italic font-medium tracking-wide">
-                  Slot adalah terhad.
-                </span>
+            {/* Subtle Dot Pattern - Matching Hero */}
+            <div 
+              className="absolute inset-0 z-0 pointer-events-none opacity-[0.05]" 
+              style={{ backgroundImage: 'radial-gradient(#ffffff 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}
+            />
+            
+            <div className="relative z-10 text-white text-left max-w-4xl mx-auto">
+              <h4 className="text-3xl sm:text-5xl font-serif font-bold mb-12 text-center text-amber-500 italic">
+                Masalah Yang Ramai Hadapi:
+              </h4>
+              <div className="space-y-10">
+                <div className="flex gap-6 items-start group">
+                  <span className="text-amber-500 text-3xl shrink-0 leading-none mt-1 group-hover:scale-125 transition-transform duration-300">•</span>
+                  <p className="text-xl sm:text-2xl font-light leading-relaxed opacity-90 transition-opacity group-hover:opacity-100"><span className="font-bold text-white border-b border-amber-500/30">Graduan:</span> Terlalu banyak teori, tetapi kurang pengalaman praktikal yang dicari-cari oleh majikan?</p>
+                </div>
+                <div className="flex gap-6 items-start group">
+                  <span className="text-amber-500 text-3xl shrink-0 leading-none mt-1 group-hover:scale-125 transition-transform duration-300">•</span>
+                  <p className="text-xl sm:text-2xl font-light leading-relaxed opacity-90 transition-opacity group-hover:opacity-100"><span className="font-bold text-white border-b border-amber-500/30">Founder/Pemilik Jenama:</span> Ada ilmu bisnes, tetapi tiada kemahiran teknikal untuk hasilkan produk yang betul-betul menarik pelanggan?</p>
+                </div>
+                <div className="flex gap-6 items-start group">
+                  <span className="text-amber-500 text-3xl shrink-0 leading-none mt-1 group-hover:scale-125 transition-transform duration-300">•</span>
+                  <p className="text-xl sm:text-2xl font-light leading-relaxed opacity-90 transition-opacity group-hover:opacity-100"><span className="font-bold text-white border-b border-amber-500/30">Pekerja Industri:</span> Rasa stuck dan perlukan kemahiran nilai tambah (added value) untuk naik pangkat atau kembangkan kerjaya?</p>
+                </div>
               </div>
             </div>
+            
+
           </div>
         </div>
       </section>
+
+
 
       {/* Benefits Section - Editorial Grid */}
       <section className="px-6 py-40 bg-white">
@@ -262,26 +293,35 @@ export default function App() {
             <div>
               <p className="small-caps text-teal-400 mb-8">Pilihan Utama Industri</p>
               <h2 className="text-5xl font-serif font-bold tracking-tight sm:text-7xl leading-[1.1]">
-                Mengapa WS ReguLab Menjadi <span className="italic text-yellow-400">Pilihan Utama?</span>
+                Mengapa WS ReguLab Solutions (Training) Menjadi <span className="italic text-yellow-400">Pilihan Utama Industri?</span>
               </h2>
               <p className="mt-10 text-xl text-teal-100/60 font-light leading-relaxed max-w-xl">
-                Kami bukan sekadar pusat latihan; kami adalah rakan strategik kerjaya anda dengan rekod prestasi yang terbukti di peringkat antarabangsa.
+                Kami bukan sekadar pusat latihan yang menawarkan kelas pada harga berpatutan; kami adalah rakan strategik kerjaya dan syarikat anda dengan rekod pengajar yang terbukti pakar dalam bidang masing-masing.
               </p>
               
-              <div className="mt-20 grid sm:grid-cols-2 gap-16">
-                <div className="space-y-6">
-                  <div className="h-12 w-12 rounded-full border border-teal-400/30 flex items-center justify-center">
-                    <Award className="h-6 w-6 text-teal-400" />
+              <div className="mt-20 space-y-12">
+                <div className="space-y-6 group">
+                  <div className="h-12 w-12 rounded-full border border-teal-400/30 flex items-center justify-center group-hover:bg-teal-400 group-hover:text-black transition-all">
+                    <Award className="h-6 w-6 text-teal-400 group-hover:text-inherit" />
                   </div>
-                  <h4 className="text-2xl font-serif font-bold">Trusted Expertise</h4>
-                  <p className="text-teal-100/40 font-light leading-relaxed">Berdekad pengalaman dalam sains formulasi dan landskap kawal selia global.</p>
+                  <h4 className="text-2xl font-serif font-bold text-white uppercase tracking-tight">Kepakaran Yang Dipercayai</h4>
+                  <p className="text-teal-100/40 font-light leading-relaxed">Diajar terus oleh pakar industri yang masih aktif di lapangan.</p>
                 </div>
-                <div className="space-y-6">
-                  <div className="h-12 w-12 rounded-full border border-teal-400/30 flex items-center justify-center">
-                    <Users className="h-6 w-6 text-teal-400" />
+                
+                <div className="space-y-6 group">
+                  <div className="h-12 w-12 rounded-full border border-teal-400/30 flex items-center justify-center group-hover:bg-teal-400 group-hover:text-black transition-all">
+                    <Users className="h-6 w-6 text-teal-400 group-hover:text-inherit" />
                   </div>
-                  <h4 className="text-2xl font-serif font-bold">Expert Mentors</h4>
-                  <p className="text-teal-100/40 font-light leading-relaxed">Dibimbing terus oleh pakar industri yang aktif dalam bidang masing-masing.</p>
+                  <h4 className="text-2xl font-serif font-bold text-white uppercase tracking-tight">Bimbingan Pasca-Latihan</h4>
+                  <p className="text-teal-100/40 font-light leading-relaxed">Rangkaian sokongan berterusan. Anda akan terus dibimbing bersama rakan industri walaupun selepas kelas tamat.</p>
+                </div>
+
+                <div className="space-y-6 group">
+                  <div className="h-12 w-12 rounded-full border border-teal-400/30 flex items-center justify-center group-hover:bg-teal-400 group-hover:text-black transition-all">
+                    <BookOpen className="h-6 w-6 text-teal-400 group-hover:text-inherit" />
+                  </div>
+                  <h4 className="text-2xl font-serif font-bold text-white uppercase tracking-tight">Kajian Kes Sebenar <span className="text-sm font-sans font-normal opacity-60 block mt-1">(Real Case Studies)</span></h4>
+                  <p className="text-teal-100/40 font-light leading-relaxed">Belajar daripada kajian kes sebenar dan mahal nilainya, dikongsikan secara eksklusif oleh pakar industri.</p>
                 </div>
               </div>
             </div>
@@ -293,10 +333,10 @@ export default function App() {
               <div className="relative bg-white/5 backdrop-blur-2xl rounded-none p-8 sm:p-16 border border-white/10 shadow-2xl">
                 <div className="flex flex-col items-center text-center">
                   <div className="text-[7rem] sm:text-[10rem] font-serif font-bold text-white leading-none mb-4">98<span className="text-3xl sm:text-4xl align-top mt-4 sm:mt-8 inline-block">%</span></div>
-                  <p className="small-caps text-teal-400 mb-8 sm:mb-12">Kadar Kebolehpasaran Graduan</p>
+                  <p className="small-caps text-teal-400 mb-8 sm:mb-12">Jaminan Pengalaman dan Pengetahuan Baru Berimpak Tinggi</p>
                   <div className="h-px w-24 bg-teal-400/30 mb-12" />
                   <p className="text-2xl text-teal-100/80 font-serif italic leading-relaxed">
-                    "Trusted. Proven. Clarity. Kami menyediakan anda untuk dunia kerjaya yang sebenar dengan standard tertinggi."
+                    "Trusted. Proven. Clarity. Kami menyediakan anda untuk dunia industri yang sebenar dengan standard tertinggi."
                   </p>
                 </div>
               </div>
@@ -316,24 +356,29 @@ export default function App() {
               <div className="h-px w-8 bg-brand" />
             </div>
             <h2 className="text-5xl font-serif font-bold tracking-tight text-ink sm:text-8xl mb-12">
-              Pendaftaran & <span className="italic">Konsultasi</span>
+              Cara Untuk Mendaftar <span className="italic">Kelas Pilihan Anda:</span>
             </h2>
             <div className="mt-24 max-w-4xl mx-auto flex flex-col gap-16 text-left">
               {[
                 {
                   num: "01",
-                  title: "Pendaftaran & Konsultasi",
-                  desc: "Sertai sesi penilaian awal untuk menentukan modul yang paling sesuai dengan matlamat kerjaya anda."
+                  title: "Semakan Kelas Pilihan & Jadual Waktu",
+                  desc: "Buat semakan dan pilih kategori kelas serta tetapkan jadual waktu yang sesuai dengan kelapangan anda."
                 },
                 {
                   num: "02",
-                  title: "Latihan Intensif",
-                  desc: "Belajar terus dari pakar industri melalui modul praktikal yang direka mengikut standard global."
+                  title: "Lengkapkan Butiran Pendaftaran",
+                  desc: "Isi borang pendaftaran dengan maklumat diri yang tepat berserta bayaran."
                 },
                 {
                   num: "03",
-                  title: "Penempatan Industri",
-                  desc: "Hubungkan bakat anda dengan rangkaian rakan industri kami untuk pengalaman kerja sebenar."
+                  title: "Proses Pengesahan Pendaftaran",
+                  desc: "Maklumat butiran dan bayaran disemak sebelum didaftarkan di dalam sistem. Anda akan menerima e-mel pengesahan dan pautan grup WhatsApp."
+                },
+                {
+                  num: "04",
+                  title: "Anda Terima Pengesahan & Mula Belajar",
+                  desc: "Selesai! Anda akan menerima e-mel pengesahan pendaftaran berserta maklumat penting seperti pautan grup WhatsApp, pautan kelas (jika kelas dalam talian), dan jadual rasmi untuk mula belajar."
                 }
               ].map((step, i) => (
                 <div key={i} className="flex flex-row gap-4 sm:gap-14 items-start group">
@@ -360,10 +405,11 @@ export default function App() {
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div>
               <p className="small-caps text-brand mb-6">Mula Sekarang</p>
-              <h3 className="text-5xl font-serif font-bold text-ink mb-8 leading-tight">
-                Mulakan Perjalanan <br />
-                Profesional Anda <br />
-                <span className="italic">Hari Ini.</span>
+              <h3 className="text-4xl sm:text-6xl font-serif font-bold text-ink mb-10 leading-tight">
+                Daftar Sekarang. <span className="italic text-brand block mt-2">Slot Sangat Terhad!</span>
+                <span className="block mt-6 text-2xl sm:text-3xl font-sans font-normal text-slate-500">
+                  Mulakan Perjalanan Pembelajaran Profesional Anda Hari Ini.
+                </span>
               </h3>
               <p className="text-xl text-slate-500 font-light leading-relaxed max-w-md">
                 Pakar kami akan menghubungi anda dalam masa 24 jam untuk sesi konsultasi peribadi yang mendalam.
@@ -500,11 +546,11 @@ export default function App() {
               </p>
             </div>
             
-            <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-12">
+            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 lg:gap-12">
               <div className="space-y-6">
                 <h5 className="small-caps text-ink">Hubungi Kami</h5>
                 <div className="flex flex-col gap-4 text-sm text-slate-500 font-light">
-                  <a href="https://www.kkmhalalconsultant.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">www.kkmhalalconsultant.com</a>
+                  <a href="https://www.kkmhalalconsultant.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors break-all sm:break-normal">www.kkmhalalconsultant.com</a>
                   <a href="tel:+60185708401" className="hover:text-brand transition-colors">+60 185708401</a>
                 </div>
               </div>
